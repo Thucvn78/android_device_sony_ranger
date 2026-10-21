@@ -1,14 +1,16 @@
+# Inherit from those products. Most sensible default comes here.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit some common TWRP/Omni stuff
+$(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit device configuration
 $(call inherit-product, device/sony/ranger/device.mk)
 
+# Device identifier
 PRODUCT_DEVICE := ranger
-PRODUCT_NAME := omni_ranger
-PRODUCT_BRAND := Sony
+PRODUCT_NAME := twrp_ranger
+PRODUCT_BRAND := sony
 PRODUCT_MODEL := Xperia L2
 PRODUCT_MANUFACTURER := sony
-
-TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
-TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := cortex-a53
+PRODUCT_RELEASE_NAME := Xperia L2
