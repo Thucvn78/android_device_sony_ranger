@@ -1,4 +1,4 @@
-# Android device tree for Sony Xperia (ranger)
+# Android device tree for Sony Xperia l2 (ranger)
 
 ```
 #
