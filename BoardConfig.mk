@@ -61,11 +61,18 @@ TWRP_INCLUDE_LOGCAT := false
 
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO := true
-TW_CRYPTO_FS_TYPE := "ext4"
-TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata"
-TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,noauto_da_alloc,discard"
+TW_CRYPTO_KEY_LOC := "/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata"
+
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
+
+# TW_INCLUDE_CRYPTO := true
+# TW_CRYPTO_FS_TYPE := "ext4"
+# TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata"
+# TW_CRYPTO_MNT_POINT := "/data"
+# TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,noauto_da_alloc,discard"
 # TW_CRYPTO_KEY_LOC := "/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata"
-TW_CRYPTO_KEY_LOC := "footer"
-TW_EXTERNAL_STORAGE_PATH := "/external_sd"
-TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+# TW_CRYPTO_KEY_LOC := "footer"
+# TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+# TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
